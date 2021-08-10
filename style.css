@@ -3,10 +3,17 @@
   height: 636px;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .box {
   width: 210px;
   height: 210px;
   border: 1px solid black;
+}
+
+.mole {
+  background-image: url(https://st2.depositphotos.com/1967477/7245/v/600/depositphotos_72457577-stock-illustration-cartoon-mole-gesturing.jpg);
+  background-size: 260px;
+  justify-content: center;
 }
