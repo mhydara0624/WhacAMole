@@ -15,15 +15,30 @@ function addMole() {
   let randomBox = boxes[Math.floor(Math.random() * 9)]
   randomBox.classList.add('mole')
   randomBox.id = molePosition
-  console.log(randomBox)
+  console.log(molePosition)
 }
 addMole()
 
-function moleMovements() {
-  setInterval(addMole, Math.random() * 1500)
-}
-moleMovements()
+// function moleMovements() {
+//   moleActive = setInterval(addMole, Math.random() * 1500)
+// }
+// moleMovements()
+function timeTicking() {
+  timeLeft--
+  timer.innerText = timeLeft
 
+  if (timeLeft == 0) {
+    clearInterval(countDownTimer)
+  }
+}
+countDownTimer = setInterval(timeTicking, 1000)
+
+// function stopMole() {
+//   if (timeLeft == 0) {
+//     clearInterval(moleActive)
+//   }
+// }
+// stopMole()
 // function() {
 //   let molePosition = randomBox.id
 //   if (randomBox.id == molePosition) {
