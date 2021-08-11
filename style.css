@@ -1,19 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
 .gameboard {
   width: 636px;
   height: 636px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
 }
 
 .box {
   width: 210px;
   height: 210px;
-  border: 1px solid black;
+  border: 1px solid white;
 }
 
 .mole {
-  background-image: url(https://st2.depositphotos.com/1967477/7245/v/600/depositphotos_72457577-stock-illustration-cartoon-mole-gesturing.jpg);
-  background-size: 210px;
+  background-image: url(https://i.ibb.co/RYG93vd/molebig-3.png);
+  background-size: 212px;
+  background-repeat: no-repeat;
   justify-content: center;
+}
+
+.intro {
+  text-align: center;
+  font-family: 'Press Start 2P', cursive;
+  color: white;
+  font-size: 60px;
+  animation: bounce 1s ease infinite;
+}
+
+@keyframes bounce {
+  70% {
+    transform: translateY(0%);
+  }
+  80% {
+    transform: translateY(-15%);
+  }
+  90% {
+    transform: translateY(0%);
+  }
+  95% {
+    transform: translateY(-7%);
+  }
+  97% {
+    transform: translateY(0%);
+  }
+  99% {
+    transform: translateY(-3%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.ingameHeading {
+  text-align: center;
+  font-family: 'Press Start 2P', cursive;
+  color: white;
+}
+
+body {
+  background: url(https://media0.giphy.com/media/3osxYsSSxjWhZw0BUY/giphy.gif?cid=ecf05e47s6p3k1s6fntefmgunz5f1zfazuyp04dd0afu7jc3&rid=giphy.gif&ct=g);
+  cursor: url(http://www.rw-designer.com/cursor-extern.php?id=65283);
+}
+
+.instructions {
+  text-align: center;
+  color: white;
+}
+article {
+  max-width: 500px;
+  color: white;
+  text-align: center;
+  right: 400px;
+  font-size: 30px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.direction {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-contain {
+  display: flex;
+  justify-content: center;
+  padding-top: 60px;
 }

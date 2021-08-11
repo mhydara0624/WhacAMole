@@ -20,7 +20,7 @@ function addMole() {
 addMole()
 
 function moleMovements() {
-  moleActive = setInterval(addMole, Math.random() * 1500)
+  moleActive = setInterval(addMole, Math.random() * 2000)
 }
 moleMovements()
 
