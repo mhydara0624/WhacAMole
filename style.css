@@ -60,7 +60,7 @@
 
 body {
   background: url(https://media0.giphy.com/media/3osxYsSSxjWhZw0BUY/giphy.gif?cid=ecf05e47s6p3k1s6fntefmgunz5f1zfazuyp04dd0afu7jc3&rid=giphy.gif&ct=g);
-  cursor: url(http://www.rw-designer.com/cursor-extern.php?id=65283);
+  cursor: url(http://www.rw-designer.com/cursor-extern.php?id=116484);
 }
 
 .instructions {
@@ -79,6 +79,7 @@ article {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: url(http://www.rw-designer.com/cursor-extern.php?id=65283);
 }
 
 .direction {
@@ -91,4 +92,26 @@ article {
   display: flex;
   justify-content: center;
   padding-top: 60px;
+}
+#time {
+  font-family: 'Press Start 2P', cursive;
+  color: white;
+}
+
+#score {
+  font-family: 'Press Start 2P', cursive;
+  color: white;
+}
+h2 {
+  font-family: 'Press Start 2P', cursive;
+  color: white;
+  animation: bounce 1s ease infinite;
+}
+
+.start {
+  font-family: 'Press Start 2P', cursive;
+  color: white;
+  font-size: 40px;
+  animation: bounce 1s ease infinite;
+  background: url(https://media0.giphy.com/media/3osxYsSSxjWhZw0BUY/giphy.gif?cid=ecf05e47s6p3k1s6fntefmgunz5f1zfazuyp04dd0afu7jc3&rid=giphy.gif&ct=g);
 }
