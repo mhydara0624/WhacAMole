@@ -6,6 +6,7 @@ let currentScore = 0
 let timeLeft = 60
 let molePosition
 let randomBox
+const playAgain = document.querySelector('.restart')
 
 function addMole() {
   boxes.forEach((box) => {
@@ -19,7 +20,7 @@ function addMole() {
 addMole()
 
 function moleMovements() {
-  moleActive = setInterval(addMole, Math.random() * 2000)
+  moleActive = setInterval(addMole, Math.random() * 1800)
 }
 moleMovements()
 
@@ -30,9 +31,14 @@ function timeTicking() {
   if (timeLeft == 0) {
     clearInterval(countDownTimer)
     clearInterval(moleActive)
+    alert('WOO-HOO YOUR FINAL SCORE IS ' + currentScore)
   }
 }
 countDownTimer = setInterval(timeTicking, 1000)
+
+function reload() {
+  reload = location.reload()
+}
 
 boxes.forEach((box) => {
   box.addEventListener('click', function () {
@@ -42,3 +48,5 @@ boxes.forEach((box) => {
     }
   })
 })
+
+playAgain.addEventListener('click', reload)
