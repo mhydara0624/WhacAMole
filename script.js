@@ -14,7 +14,6 @@ function addMole() {
   let randomPosition = Math.floor(Math.random() * 9)
   let randomBox = boxes[randomPosition]
   randomBox.classList.add('mole')
-  console.log(randomBox.id)
   molePosition = randomBox.id
 }
 addMole()

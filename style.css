@@ -1,15 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 .gameboard {
-  width: 636px;
-  height: 636px;
+  width: 606px;
+  height: 606px;
   display: flex;
   flex-wrap: wrap;
 }
 
 .box {
-  width: 210px;
-  height: 210px;
+  width: 200px;
+  height: 200px;
   border: 1px solid white;
 }
 
@@ -60,7 +60,6 @@
 
 body {
   background: url(https://media0.giphy.com/media/3osxYsSSxjWhZw0BUY/giphy.gif?cid=ecf05e47s6p3k1s6fntefmgunz5f1zfazuyp04dd0afu7jc3&rid=giphy.gif&ct=g);
-  cursor: url(http://www.rw-designer.com/cursor-extern.php?id=116484);
 }
 
 .instructions {
@@ -79,7 +78,7 @@ article {
   display: flex;
   justify-content: center;
   align-items: center;
-  cursor: url(http://www.rw-designer.com/cursor-extern.php?id=65283);
+  cursor: url(/Users/mustapfahydara/Downloads/malletbig.png);
 }
 
 .direction {
