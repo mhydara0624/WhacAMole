@@ -110,3 +110,8 @@ playAgain.addEventListener('click', reload)
 <li> I used the for each to iterate over the entire array of boxes and making it that if the id of the box you cicked is equal to the position of the mole your score would increase by 10 points. I also used the dom to set the score html text equal to my current score variable.
 </details>  
    
+   # Credits
+   <li> <a href = "https://www.w3schools.com/js/js_timing.asp">W3 Schools</a> - I was able to use this page as a refrence to figuring out timing events. Explains how to use intervals and clear them as well. 
+   <li> <a href = "https://www.youtube.com/watch?v=AHh57PrdQsA">Web Design Inspiration Youtube</a> - This video helped solidify the concepts I used to make my countdown timer. I also adjusted thr code to fit my own use and needs.
+   <li> <a href = "https://css-tricks.com/making-css-animations-feel-natural/"> CSS Tricks</a> - This was instrumental in helping me build out the bounce animation features. It showed me how I can change the key frames to get different bounce affects.
+   <li> <a href = "https://learnersbucket.com/tutorials/js-projects/whack-a-mole-game-in-javascript/"> Learners Bucket Tutorial</a> - I did not follow this tutorial step by step. I used it to reinforce my own ideas for the code of the game. Some concepts were similar but I felt that my process would make for easier dryer code.

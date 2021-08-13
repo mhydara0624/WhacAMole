@@ -7,6 +7,7 @@ let timeLeft = 60
 let molePosition
 let randomBox
 const playAgain = document.querySelector('.restart')
+const myAudio = document.getElementById('my-audio')
 
 function addMole() {
   boxes.forEach((box) => {
@@ -50,3 +51,7 @@ boxes.forEach((box) => {
 })
 
 playAgain.addEventListener('click', reload)
+
+myAudio.addEventListener('mousemove', function () {
+  myAudio.play()
+})
