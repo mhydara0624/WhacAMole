@@ -10,6 +10,7 @@ This is a fun and exciting game where the objectives is to wack as many moles as
 <li> CSS
 <li> Javascript
 <li>  <a href = "https://trello.com/b/26fG5zDr/whac-a-mole-project">Trello </a>
+<li>  <a href = "https://github.com/mhydara0624/WhacAMole">GitHub </a>
 
 # Getting Started
 My game can be reached on <a href="https://whacamole-dry.surge.sh/"> Surge</a>. All you need to do to play the game is try to click the boxes in which the moles appear. Some moles are very fast and some are very slow. If you hit a slow mole more than once you will be credited with points. Try to get the highest score you can before time expires and then you can play again and try to beat your own scores.
