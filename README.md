@@ -11,8 +11,8 @@ This is a fun and exciting game where the objectives is to wack as many moles as
 <li> Javascript
 <li>  <a href = "https://trello.com/b/26fG5zDr/whac-a-mole-project">Trello </a>
 
-
-
+# Getting Started
+My game can be reached on <a href="https://whacamole-dry.surge.sh/"> Surge</a>. All you need to do to play the game is try to click the boxes in which the moles appear. Some moles are very fast and some are very slow. If you hit a slow mole more than once you will be credited with points. Try to get the highest score you can before time expires and then you can play again and try to beat your own scores.
 # Coding Structures
 This game ties together a variety of different kinds of HTML CSS and Javascript tools in order to bring the game to life. In this section I will break down how I coded each aspect of the game. 
 
@@ -68,7 +68,7 @@ function addMole() {
 addMole()
 ```
 <li> The above function represents a major part of our game's logic. This function uses for each to apply across all squares. I decided to use adding and removing class to manipulate the gameboards boxes. So the moles would appear in the boxes which had the mole class. The reason the first part of the function is to remove the mole class is so there is only one mole at a time and once one is removed a new one is added.
-<li> In my global variable selectiong boxes made an array of boxes I used this to my advantage and set it up using and Math.random  *9 to ensure that I get a random number between 0 and 9. I used math floor so it rounded down to eat. This was necessary because the indexes of boxes are 0-8. once a random number was chosen that became the index of the square that would add the mole class. I made sure to get a variable to assign to that chosen boxes id because this would be needed to deal with scoring.
+<li> In my global variable selectiong boxes made an array of boxes I used this to my advantage and set it up using Math.random  *9 to ensure that I get a random number between 0 and 9. I used math floor so it rounded down to 8. This was necessary because the indexes of boxes are 0-8. once a random number was chosen that became the index of the square that would add the mole class. I made sure to get a variable to assign to that chosen boxes id because this would be needed to deal with scoring.
 
 ```javascript
 function moleMovements() {
@@ -116,6 +116,9 @@ playAgain.addEventListener('click', reload)
    
    # Credits
    <li> <a href = "https://www.w3schools.com/js/js_timing.asp">W3 Schools</a> - I was able to use this page as a refrence to figuring out timing events. Explains how to use intervals and clear them as well. 
-   <li> <a href = "https://www.youtube.com/watch?v=AHh57PrdQsA">Web Design Inspiration Youtube</a> - This video helped solidify the concepts I used to make my countdown timer. I also adjusted the code to fit my own use and needs.
+   <li> <a href = "https://www.youtube.com/watch?v=AHh57PrdQsA">Web Design Inspiration Youtube</a> - This video helped solidify the concepts I used to make my countdown timer. I also adjusted the code to fit my own use and needs. Awesome content on front end development topics.
    <li> <a href = "https://css-tricks.com/making-css-animations-feel-natural/"> CSS Tricks</a> - This was instrumental in helping me build out the bounce animation features. It showed me how I can change the key frames to get different bounce affects.
-   <li> <a href = "https://learnersbucket.com/tutorials/js-projects/whack-a-mole-game-in-javascript/"> Learners Bucket Tutorial</a> - I did not follow this tutorial step by step. I used it to reinforce my own ideas for the code of the game. Some concepts were similar but I felt that my process would make for easier dryer code.
+   <li> <a href = "https://learnersbucket.com/tutorials/js-projects/whack-a-mole-game-in-javascript/"> Learners Bucket Tutorial</a> - I did not follow this tutorial step by step. I used it to reinforce my own ideas for the code of the game.  Thanks to Learners buckets for helping me realize I was on the right path.
+
+   # Future Updates
+   <li>
