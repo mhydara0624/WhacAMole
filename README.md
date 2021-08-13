@@ -28,7 +28,15 @@ This game ties together a variety of different kinds of HTML CSS and Javascript 
 
 <details>
 <summary>CSS Styling</summary>
-<li>  As stated earlier I utilized CSS flexbox to orient where i wanted each element of my game to be located.
-<li> I was able to use the 
+<li>  As stated earlier I utilized CSS flexbox to orient where i wanted each element of my game to be located. I used multiple flex containers throughout the project to not only center my gameboard but my buttons as well.
+<li> I was able to use the background size cover characteristic as well as background no repeat to get the most recent version of my background and this helped the aesthethic of my game tremendously.
+<li> The most significant addition to my CSS toolbox was the animation which really helped me elevate the overall feel of my game. I made it 1s infinite so that it would continue to bounce and also so it was fast enough to notice. the 1s also made it so each second that went off the clock the timer would also bounce.
+</details>  
+
+<details>
+<summary>Javascript and Game Logic</summary>
+<li>  
+<li> 
+<li> 
 </details>  
    
