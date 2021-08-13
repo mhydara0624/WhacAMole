@@ -18,7 +18,7 @@ This game ties together a variety of different kinds of HTML CSS and Javascript 
 
 <details> 
 <summary> Start Page </summary>
-<li>The start page was the first part I completed and was essentially an html page linked to the game page via the start game button. In addition to that I also added instructions to the game. The first page is when you are exposed to the special game font I found called 'Press Start 2p'. Addtional features added include the bounce animation feature to make the game more lively. I also used an audio tag to autoplay some theme music for the song. 
+<li>The start page was the first part I completed and was essentially an html page linked to the game page via the start game button. In addition to that I also added instructions to the game. The first page is when you are exposed to the special game font I found called 'Press Start 2p'. Addtional features added include the bounce animation feature to make the game more lively. I also used an audio tag to autoplay some theme music for the song. However this does not work on the chrome browser and I will update it to do so in future versions.
 </details>
 
 
@@ -110,12 +110,12 @@ boxes.forEach((box) => {
 playAgain.addEventListener('click', reload)
 
 ```
-<li> This snippet of code contains my event listeners and the reload function I used for the play again button. The reload function was simole so i defined it outside the event listener and referred to it. However since the other function was more complicated nad performed more fucntions I decided to include it in the actual event listener.
+<li> This snippet of code contains my event listeners and the reload function I used for the play again button. The reload function was simole so i defined it outside the event listener and referred to it. However since the other function was more complicated and performed more fucntions I decided to include it in the actual event listener.
 <li> I used the for each to iterate over the entire array of boxes and making it that if the id of the box you cicked is equal to the position of the mole your score would increase by 10 points. I also used the dom to set the score html text equal to my current score variable.
 </details>  
    
    # Credits
-   <li> <a href = "https://www.w3schools.com/js/js_timing.asp">W3 Schools</a> - I was able to use this page as a refrence to figuring out timing events. Explains how to use intervals and clear them as well. 
+   <li> <a href = "https://www.w3schools.com/js/js_timing.asp">W3 Schools</a> - I was able to use this page as a refrence to figuring out timing events. Explains how to use intervals and clear them as well. I also used their content to help with audio tags and playing sounds. 
    <li> <a href = "https://www.youtube.com/watch?v=AHh57PrdQsA">Web Design Inspiration Youtube</a> - This video helped solidify the concepts I used to make my countdown timer. I also adjusted the code to fit my own use and needs. Awesome content on front end development topics.
    <li> <a href = "https://css-tricks.com/making-css-animations-feel-natural/"> CSS Tricks</a> - This was instrumental in helping me build out the bounce animation features. It showed me how I can change the key frames to get different bounce affects.
    <li> <a href = "https://learnersbucket.com/tutorials/js-projects/whack-a-mole-game-in-javascript/"> Learners Bucket Tutorial</a> - I did not follow this tutorial step by step. I used it to reinforce my own ideas for the code of the game.  Thanks to Learners buckets for helping me realize I was on the right path.
