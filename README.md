@@ -18,7 +18,7 @@ This game ties together a variety of different kinds of HTML CSS and Javascript 
 
 <details> 
 <summary> Start Page </summary>
-<li>The start page was the first part I completed and was essentially an html page linked to the game page via the start game button. In addition to that I also added instructions to the game. The first page is when you are exposed to the special game font I found called 'Press Start 2p'. Addtional features added include the bounce animation feature to make the game more lively.
+<li>The start page was the first part I completed and was essentially an html page linked to the game page via the start game button. In addition to that I also added instructions to the game. The first page is when you are exposed to the special game font I found called 'Press Start 2p'. Addtional features added include the bounce animation feature to make the game more lively. I also used an audio tag to autoplay some theme music for the song. 
 </details>
 
 
@@ -121,4 +121,7 @@ playAgain.addEventListener('click', reload)
    <li> <a href = "https://learnersbucket.com/tutorials/js-projects/whack-a-mole-game-in-javascript/"> Learners Bucket Tutorial</a> - I did not follow this tutorial step by step. I used it to reinforce my own ideas for the code of the game.  Thanks to Learners buckets for helping me realize I was on the right path.
 
    # Future Updates
-   <li>
+ - [ ] There will be multiple levels of gameplay with bigger boards and faster moles.
+ - [ ] Will implement a feature to remember your previous scores
+ - [x] Will include audio effects to accompany game 
+ - [ ] Will add effects to timer to indicate when time is running out  

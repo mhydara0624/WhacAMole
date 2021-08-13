@@ -8,6 +8,7 @@ let molePosition
 let randomBox
 const playAgain = document.querySelector('.restart')
 const myAudio = document.getElementById('my-audio')
+const gameOver = document.getElementById('game-over')
 
 function addMole() {
   boxes.forEach((box) => {
@@ -32,6 +33,7 @@ function timeTicking() {
   if (timeLeft == 0) {
     clearInterval(countDownTimer)
     clearInterval(moleActive)
+    gameOver.play()
     alert('WOO-HOO YOUR FINAL SCORE IS ' + currentScore)
   }
 }
@@ -44,6 +46,7 @@ function reload() {
 boxes.forEach((box) => {
   box.addEventListener('click', function () {
     if (box.id == molePosition) {
+      myAudio.play()
       currentScore += 10
       score.innerText = currentScore
     }
@@ -51,7 +54,3 @@ boxes.forEach((box) => {
 })
 
 playAgain.addEventListener('click', reload)
-
-myAudio.addEventListener('mousemove', function () {
-  myAudio.play()
-})
