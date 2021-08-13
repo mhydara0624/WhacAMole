@@ -1,6 +1,10 @@
 # WhacAMole
 This is a fun and exciting game where the objectives is to wack as many moles as possible as many times as possible to score the most points. The first level is a 3x3 grid where moles appear in random boxes for a random amount of time. This will keep you on your toes and keep the game interesting because there is no consistent pattern. In future updates of the game there will be multiple levels and different types of moles worth different amounts of points.
 
+<img src = "/Users/mustapfahydara/ga_seir/unit1/WhacAMole/startscreen.png">
+<img src = "/Users/mustapfahydara/ga_seir/unit1/WhacAMole/Gameplay.png">
+
+
 # Technologies Used
 <li> HTML
 <li> CSS
@@ -112,6 +116,6 @@ playAgain.addEventListener('click', reload)
    
    # Credits
    <li> <a href = "https://www.w3schools.com/js/js_timing.asp">W3 Schools</a> - I was able to use this page as a refrence to figuring out timing events. Explains how to use intervals and clear them as well. 
-   <li> <a href = "https://www.youtube.com/watch?v=AHh57PrdQsA">Web Design Inspiration Youtube</a> - This video helped solidify the concepts I used to make my countdown timer. I also adjusted thr code to fit my own use and needs.
+   <li> <a href = "https://www.youtube.com/watch?v=AHh57PrdQsA">Web Design Inspiration Youtube</a> - This video helped solidify the concepts I used to make my countdown timer. I also adjusted the code to fit my own use and needs.
    <li> <a href = "https://css-tricks.com/making-css-animations-feel-natural/"> CSS Tricks</a> - This was instrumental in helping me build out the bounce animation features. It showed me how I can change the key frames to get different bounce affects.
    <li> <a href = "https://learnersbucket.com/tutorials/js-projects/whack-a-mole-game-in-javascript/"> Learners Bucket Tutorial</a> - I did not follow this tutorial step by step. I used it to reinforce my own ideas for the code of the game. Some concepts were similar but I felt that my process would make for easier dryer code.
