@@ -35,8 +35,78 @@ This game ties together a variety of different kinds of HTML CSS and Javascript 
 
 <details>
 <summary>Javascript and Game Logic</summary>
-<li>  
-<li> 
-<li> 
+ 
+```javascript
+const boxes = document.querySelectorAll('.box')
+const timer = document.querySelector('#time')
+const score = document.querySelector('#score')
+const mole = document.querySelector('.mole')
+let currentScore = 0
+let timeLeft = 60
+let molePosition
+let randomBox
+const playAgain = document.querySelector('.restart')
+```
+<li> Above are all my global variables listed out. I needed to select all the boxes together because it would be read as an array of boxes with ids that make it easy to refer back them. I also selected all the other parts of my html I would need to manipulate as well as globally defining variables that would become important in later functions.
+
+ 
+```javascript
+
+function addMole() {
+  boxes.forEach((box) => {
+    box.classList.remove('mole')
+  })
+  let randomPosition = Math.floor(Math.random() * 9)
+  let randomBox = boxes[randomPosition]
+  randomBox.classList.add('mole')
+  molePosition = randomBox.id
+}
+addMole()
+```
+<li> The above function represents a major part of our game's logic. This function uses for each to apply across all squares. I decided to use adding and removing class to manipulate the gameboards boxes. So the moles would appear in the boxes which had the mole class. The reason the first part of the function is to remove the mole class is so there is only one mole at a time and once one is removed a new one is added.
+<li> In my global variable selectiong boxes made an array of boxes I used this to my advantage and set it up using and Math.random  *9 to ensure that I get a random number between 0 and 9. I used math floor so it rounded down to eat. This was necessary because the indexes of boxes are 0-8. once a random number was chosen that became the index of the square that would add the mole class. I made sure to get a variable to assign to that chosen boxes id because this would be needed to deal with scoring.
+
+```javascript
+function moleMovements() {
+  moleActive = setInterval(addMole, Math.random() * 1800)
+}
+moleMovements()
+
+function timeTicking() {
+  timeLeft--
+  timer.innerText = timeLeft
+
+  if (timeLeft == 0) {
+    clearInterval(countDownTimer)
+    clearInterval(moleActive)
+    alert('WOO-HOO YOUR FINAL SCORE IS ' + currentScore)
+  }
+}
+countDownTimer = setInterval(timeTicking, 1000)
+```
+
+<li> This part of my code is where I added all the timing aspects of my code. Initially I had tried to use the SetTimeOut method however after reading the description I realized this wouldn't work because I needed my functions to execute multiple times. I discovered the setInterval and clearinterval which helped me add and remove moles at an interval. However i reused the Math random method to get a random time between 0ms to 1800ms so there could be randomness and variance within the game.
+<li> The time ticking function is set up for the end of the game. It would stop the add mole and countdown timer functions at 0 then issue an alert to let the player know the game is over.
+I named my set interval functions so that I could stop them easier by referring back to those names.
+
+```javascript
+function reload() {
+  reload = location.reload()
+}
+
+boxes.forEach((box) => {
+  box.addEventListener('click', function () {
+    if (box.id == molePosition) {
+      currentScore += 10
+      score.innerText = currentScore
+    }
+  })
+})
+
+playAgain.addEventListener('click', reload)
+
+```
+<li> This snippet of code contains my event listeners and the reload function I used for the play again button. The reload function was simole so i defined it outside the event listener and referred to it. However since the other function was more complicated nad performed more fucntions I decided to include it in the actual event listener.
+<li> I used the for each to iterate over the entire array of boxes and making it that if the id of the box you cicked is equal to the position of the mole your score would increase by 10 points. I also used the dom to set the score html text equal to my current score variable.
 </details>  
    
