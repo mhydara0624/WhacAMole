@@ -10,4 +10,25 @@ This is a fun and exciting game where the objectives is to wack as many moles as
 
 
 # Coding Structures
-This game ties together a vari
+This game ties together a variety of different kinds of HTML CSS and Javascript tools in order to bring the game to life. In this section I will break down how I coded each aspect of the game. 
+
+<details> 
+<summary> Start Page </summary>
+<li>The start page was the first part I completed and was essentially an html page linked to the game page via the start game button. In addition to that I also added instructions to the game. The first page is when you are exposed to the special game font I found called 'Press Start 2p'. Addtional features added include the bounce animation feature to make the game more lively.
+</details>
+
+
+
+<details>
+<summary>Game Page</summary>
+<li> The gameboard was inspired by my prior experience in making a tic-tac-toe game. The 3x3 grid seemed like the perfect setup to run multiple functions while still being able to manipluate each box of the grid. I used the CSS flex property along with flex wrap to make the grid 3x3 boxes. 
+<li> In addition to the gameboard the other features on the gamepage include the countdown timer, score display and play again button. 
+</details>   
+
+
+<details>
+<summary>CSS Styling</summary>
+<li>  As stated earlier I utilized CSS flexbox to orient where i wanted each element of my game to be located.
+<li> I was able to use the 
+</details>  
+   
